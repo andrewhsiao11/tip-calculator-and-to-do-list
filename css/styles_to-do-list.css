@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #474036;
+}
+
+.strikethrough {
+    text-decoration: line-through 2px solid red;
+}
+
+.strikethrough2 {
+    text-decoration: line-through 2px solid #155724;
+}
+
+body {
+  background-color: #d1c9bd !important;
+  font-family: 'Roboto'!important;
+}
+ 
+
+.card-body {
+    background-color:#b3a69f !important;
+}
+
+.list-group-item-dark1 {
+    background-color: #ede8e0 !important;
+    color: rgb(36, 34, 34) !important;
+}
+
+

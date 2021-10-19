@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles_to-do-list.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>To Do List</title>
+  </head>
+  <body>
+    <h1 class="navbar text-white justify-content-center">To-Do List</h1>
+<br>
+    <div class="container rounded-lg card card-body">
+        <h2>Add Items</h2>
+      <form id="addForm" class = "form-inline mb-3">
+            <input type="text" id="toDo" placeholder="type here!" class="form-control mr-2"/>
+            <input type="submit" value="Add Task" class="btn btn-dark"/>
+      </form>
+      <h2>To-Do List</h2>
+      <ul id="list" class="list-group">
+        <li class="listItem list-group-item list-group-item-dark1 list-group-item-action">Sell groceries <button class = "btn btn-danger btn-sm float-right delete">X</button> </li>
+        <li class="listItem list-group-item list-group-item-dark1 list-group-item-action">Take in the trash <button class = "btn btn-danger btn-sm float-right delete">X</button></li>
+        <li class="listItem list-group-item list-group-item-dark1 list-group-item-action">Put off homework assignment <button class = "btn btn-danger btn-sm float-right delete">X</button></li>
+        <li class="listItem list-group-item list-group-item-dark1 list-group-item-action">Tarnish the kitchen <button class = "btn btn-danger btn-sm float-right delete">X</button></li>
+        <li class="listItem list-group-item list-group-item-dark1 list-group-item-action">Commit tax evasion <button class = "btn btn-danger btn-sm float-right delete">X</button></li>
+        <li class="listItem list-group-item list-group-item-dark1 list-group-item-action">Vacuum Ceiling <button class = "btn btn-danger btn-sm float-right delete">X</button></li>
+        <li class="listItem list-group-item list-group-item-dark1 list-group-item-action">Water the weeds <button class = "btn btn-danger btn-sm float-right delete">X</button></li>
+        <li class="listItem list-group-item list-group-item-dark1 list-group-item-action">Unfold laundry <button class = "btn btn-danger btn-sm float-right delete">X</button></li>
+      </ul>
+    </div>
+
+    <script src="/js/app_to-do-list.js"></script>
+  </body>
+</html>
