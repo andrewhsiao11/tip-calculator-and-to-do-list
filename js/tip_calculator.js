@@ -5,12 +5,15 @@ calculate.addEventListener('click', () => {
     let tipPercent = document.querySelector('#tipPercent').value;
     let split = document.querySelector('#split').value;
 
-    //validate
-    if(totalBill === '' || tipPercent == 0 || split == 0){
+    if (totalBill === '' || tipPercent < 0 || split == 0) {
         alert('Please enter values');
         return;
     }
-    //calculate
+    else if (tipPercent == 0) {
+        alert('No tip? Bad karma.');
+        return;
+    }
+
     let total = (totalBill * tipPercent) / split;
     total = total.toFixed(2);
     
