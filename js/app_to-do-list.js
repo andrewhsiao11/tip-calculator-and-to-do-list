@@ -10,12 +10,12 @@ form.addEventListener("submit", function (e) {
     "listItem list-group-item list-group-item-dark1 list-group-item-action";
   li.appendChild(document.createTextNode(input));
   list.appendChild(li);
-// adding delete button to new item
+  // adding delete button to new item
   let deleteBtn = document.createElement("button");
   deleteBtn.className = "btn btn-danger btn-sm float-right delete";
   deleteBtn.appendChild(document.createTextNode("X"));
   li.appendChild(deleteBtn);
-// adding li to the list
+  // adding li to the list
   list.appendChild(li);
   form.reset();
 });
@@ -24,19 +24,13 @@ form.addEventListener("submit", function (e) {
 list.addEventListener("click", function (e) {
   if (e.target.classList.contains("delete")) {
     e.target.parentElement.className =
-      "listItem list-group-item list-group-item-danger strikethrough";
+      "listItem list-group-item list-group-item-danger strikethrough fade-out";
     setTimeout(() => {
       list.removeChild(e.target.parentElement);
     }, 500);
   } else {
     //   mark as complete by turning green and strikethrough
-  e.target.className =
-    "listItem list-group-item list-group-item-success strikethrough2";
+    e.target.className =
+      "listItem list-group-item list-group-item-success strikethrough2";
   }
 });
-
-
-
-
-
-

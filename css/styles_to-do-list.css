@@ -2,6 +2,7 @@
     background-color: #474036;
 }
 
+/* strikethroughs */
 .strikethrough {
     text-decoration: line-through 2px solid red;
 }
@@ -10,19 +11,71 @@
     text-decoration: line-through 2px solid #155724;
 }
 
+/* background color */
 body {
   background-color: #d1c9bd !important;
   font-family: 'Roboto'!important;
 }
  
-
+/* card body background color */
 .card-body {
     background-color:#b3a69f !important;
 }
 
+/* changing background color of list items */
 .list-group-item-dark1 {
     background-color: #ede8e0 !important;
     color: rgb(36, 34, 34) !important;
+}
+
+
+/*fade out animation */
+.fade-out {
+    animation: fadeOut ease 550ms;
+    -webkit-animation: fadeOut ease 550ms;
+    -moz-animation: fadeOut ease 550ms;
+    -o-animation: fadeOut ease 550ms;
+    -ms-animation: fadeOut ease 550ms;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  @-moz-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  @-o-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
 }
 
 
