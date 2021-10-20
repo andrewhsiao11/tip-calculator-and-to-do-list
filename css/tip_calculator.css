@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
     margin: 0;
@@ -6,11 +6,16 @@
     box-sizing: border-box;
     color: #444444;
 }
+  
+.tip-background-image {
+    background-color: black;
+    opacity: 0.8;
+}
 
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-image: url(https://pixabay.com/get/g8e88d938c2b391bd687565e9b60609b7da6ee8320b99f85877d540c1ed1060591d8e8f139a6b40289e896c31473a7e0a.jpg);
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('https://pixabay.com/get/g8e88d938c2b391bd687565e9b60609b7da6ee8320b99f85877d540c1ed1060591d8e8f139a6b40289e896c31473a7e0a.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     font-size: 20px;
@@ -18,31 +23,30 @@ body {
     color: #443f37;
 }
 
-.container {
-    position: fixed;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.container-tip {
+    margin: 25px auto 25px auto;
+    font-size: 25px;
+    position: relative;
     width: 450px;
-    background-color:#f8f9f386;
-    color: #f8f9f3;
+    background-color:#e2e2e2a1;
+    color: #443f37;
     backdrop-filter: blur(4px);
     text-align: center;
-    border-radius: 5px;
+    border-radius: 8px;
     backdrop-filter: blur(5px);
+    overflow: auto;
 }
 
 .control {
     margin: 16px;
 }
 
-h1 {
-    font-weight: 900;
+.tip-h1 {
+    font-weight: 400;
     font-size: 52px;
     color: #443f37;
-    font-style: italic;
     background-color: #f6e5cb;
-    padding: 5px;
+    padding: 15px;
     margin-bottom: 6px;
     border-radius: 5px;
 }
@@ -68,7 +72,7 @@ select {
 }
 
 
-button {
+#calculate {
     padding: 10px;
     margin-left: 5px;
     font-size: 15px;
@@ -80,7 +84,7 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
+#calculate:hover {
     padding: 10px;
     font-size: 15px;
     background-color: #f6e5cb;
@@ -99,4 +103,30 @@ button:hover {
 
 p.tip {
     font-size: 38px;
+}
+
+@media screen and (max-width:475px){
+    .container-tip {
+        margin: 25px auto 25px auto;
+        position: relative;
+        width: 300px;
+        background-color:#dadadaa1;
+        color: #443f37;
+        backdrop-filter: blur(4px);
+        text-align: center;
+        border-radius: 8px;
+        backdrop-filter: blur(5px);
+        overflow: auto;
+    }
+    .tip-h1 {
+        font-weight: 400;
+        font-size: 24px;
+        color: #443f37;
+        background-color: #f6e5cb;
+        padding: 15px;
+        margin-bottom: 6px;
+        border-radius: 5px;
+    }
+
+
 }
