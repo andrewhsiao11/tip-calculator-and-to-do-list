@@ -13,21 +13,25 @@
 }
 
 
+
 body {
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('https://pixabay.com/get/g8e88d938c2b391bd687565e9b60609b7da6ee8320b99f85877d540c1ed1060591d8e8f139a6b40289e896c31473a7e0a.jpg');
-    background-size:cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url(/assets/images_tip/ikea-background.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     font-size: 20px;
     font-weight: 300;
     color: #443f37;
+    margin-bottom: 50px;
 }
 
 .container-tip {
     margin: 25px auto 25px auto;
     font-size: 25px;
     position: relative;
-    width: 450px;
+    /* width: 450px; */
+    width: 50%;
+    height: 90%;
     background-color:#e2e2e2a1;
     color: #443f37;
     backdrop-filter: blur(4px);
@@ -105,11 +109,33 @@ p.tip {
     font-size: 38px;
 }
 
-@media screen and (max-width:475px){
+html, body {
+    height: 100%;
+  }
+  .page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px; 
+  }
+  .page-wrap:after {
+    content: "";
+    display: block;
+  }
+  .footer-basic, .page-wrap:after {
+    /* .push must be the same height as footer */
+    height: 142px; 
+  }
+
+
+
+@media screen and (max-width:988px){
+    * {
+        color: #443f37 !important;
+    }
     .container-tip {
         margin: 25px auto 25px auto;
         position: relative;
-        width: 300px;
+        width: 75%;
         background-color:#dadadaa1;
         color: #443f37;
         backdrop-filter: blur(4px);
@@ -117,6 +143,7 @@ p.tip {
         border-radius: 8px;
         backdrop-filter: blur(5px);
         overflow: auto;
+        font-size: 20px;
     }
     .tip-h1 {
         font-weight: 400;
@@ -128,5 +155,20 @@ p.tip {
         border-radius: 5px;
     }
 
+    #split {
+        border: none;
+        padding: 5px;
+        font-size: 15px;
+        border-bottom: 3px solid #959caa;
+        background-color: rgba(255, 255, 255, 0);
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #tipPercent {
+        padding: 5px;
+        font-size: 12px;
+
+    }
 
 }
