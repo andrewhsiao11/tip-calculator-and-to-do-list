@@ -61,11 +61,26 @@
   color: white
 }
 
+@media screen and (max-width:360px){
+  h1{
+      color:white;
+      font-size:20px !important;
+  }  
+
+}
 .carousel-item p{
   font-size: 50px;
   color: white;
   margin-top: 20px;
 }
+
+@media screen and (max-width:360px){
+  p{
+      color:white;
+      font-size:15px !important;
+  }  
+}
+
 .carousel-item button {
   margin-top: 20px;
 }
@@ -74,6 +89,12 @@
   color: #80778c;
 }
 
+
+@media screen and (max-width:360px){
+  button{
+      font-size:15px !important;
+  }  
+}
 /*Footer*/
 
 .footer-basic {
