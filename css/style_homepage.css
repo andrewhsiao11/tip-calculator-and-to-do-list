@@ -7,10 +7,12 @@
   .navbar {
    position: absolute;
    background: transparent;
+   margin-right: 100px;
   }
 
   .nav-link {
       color: black !important;
+      
   }
 
   .nav-link:hover {
