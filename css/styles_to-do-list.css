@@ -1,25 +1,36 @@
-.navbar {
-    background-color: #474036;
-}
-
 /* strikethroughs */
 .strikethrough {
-    text-decoration: line-through 2px solid red;
+    text-decoration: line-through 2px solid red !important;
 }
 
 .strikethrough2 {
-    text-decoration: line-through 2px solid #155724;
+    text-decoration: line-through 2px solid #155724 !important;
 }
 
 /* background color */
 body {
-  background-color: #d1c9bd !important;
-  font-family: 'Roboto'!important;
+  color: rgba(0, 0, 0, 0.774) !important;
+  background-image: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2804&q=80") !important;
+  background-size: 100%;
+  background-repeat: repeat-y; 
 }
+
+/* if making an image overlay onto a card then can darken background image */
+/* .background-image {
+  background-color: black;
+  opacity: 0.8;
+  ;
+} 
+ .card-img-overlay {
+  backdrop-filter: blur(3px) !important;
+} */
  
 /* card body background color */
 .card-body {
-    background-color:#b3a69f !important;
+    background-color:#d1c8c3 !important;
+    opacity: 90%;
+    backdrop-filter: blur(50px) !important;
+    
 }
 
 /* changing background color of list items */
@@ -28,6 +39,12 @@ body {
     color: rgb(36, 34, 34) !important;
 }
 
+/* if doing image overlay and had overlap: can use this to make scroll bar
+.list-group {
+  flex-grow: 1;
+    padding: 2em;
+    overflow-y: scroll;
+} */
 
 /*fade out animation */
 .fade-out {
