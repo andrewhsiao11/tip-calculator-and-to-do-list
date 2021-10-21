@@ -61,20 +61,20 @@
   color: white
 }
 
-@media screen and (max-width:360px){
+@media all and (max-width:843px) {
   h1{
       color:white;
       font-size:20px !important;
   }  
-
 }
+
 .carousel-item p{
   font-size: 50px;
   color: white;
   margin-top: 20px;
 }
 
-@media screen and (max-width:360px){
+@media all and (max-width:843px) {
   p{
       color:white;
       font-size:15px !important;
@@ -83,18 +83,35 @@
 
 .carousel-item button {
   margin-top: 20px;
+  color: white;
+  background-color: black;
 }
 
 .carousel-item button:hover {
   color: #80778c;
+  background-color: black;
+  
 }
 
-
-@media screen and (max-width:360px){
+@media all and (max-width:843px) {
   button{
-      font-size:15px !important;
+      color:white;
+      font-size: 10px !important;
+      margin-top: 10px !important;
   }  
 }
+@media screen and (max-height: 600px) {
+  .carousel-item {
+  height: 24rem;
+  }
+}
+
+@media screen and (max-height: 600px) {
+    .carousel-inner img{
+    height: 24rem;
+    }
+  }
+
 /*Footer*/
 
 .footer-basic {
@@ -158,3 +175,17 @@
   color: #aaa;
   margin-bottom: 0;
 }
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer-basic, .page-wrap:after {
+  /* .push must be the same height as footer */
+   height: 142px; 
+} 
