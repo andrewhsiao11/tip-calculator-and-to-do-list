@@ -100,15 +100,15 @@
       margin-top: 10px !important;
   }  
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 1024px) {
   .carousel-item {
-  height: 24rem !important;
+  height: 35rem !important;
   }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 1024px) {
     .carousel-inner img{
-    height: 24rem !important;
+    height: 35rem !important;
     }
   }
 
