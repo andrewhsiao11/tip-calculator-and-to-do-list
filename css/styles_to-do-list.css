@@ -33,6 +33,16 @@
     
 }
 
+/* sizing of card */
+.card {
+  max-width: 75% !important;
+  position: relative;
+}
+/* sizing of text */
+#toDo {
+  max-width: 50%;
+}
+
 /* changing background color of list items */
 .list-group-item-dark1 {
     background-color: #ede8e0 !important;
